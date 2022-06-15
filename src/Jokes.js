@@ -3,10 +3,12 @@ import React from 'react'
 
 const Jokes = ({ data }) => {
     return (
-      <section className="joke">
-
-         <h1>{data.joke}</h1>
-         </section>
+      <article className="joke">
+        <div className='single-joke'>
+            <h1>{data.joke}</h1>  
+        </div>
+         
+         </article >
      
     )
 }

@@ -3,7 +3,7 @@ import Jokes from "./Jokes";
 import Loading from "./Loading";
 import Setup from "./setup";
 
-const url = "https://v2.jokeapi.dev/joke/Any";
+const url = "https://v2.jokeapi.dev/joke/Programming";
 
 function App() {
 const [loading, setLoading] = useState(true);
@@ -14,7 +14,6 @@ const [data, setData] = useState([]);
       try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log("the datatype of jokes is = ", typeof data);
         setLoading(false);
         setData(data)
        
@@ -22,7 +21,6 @@ const [data, setData] = useState([]);
         setLoading(false);
         console.log(error);
       }
-      console.log("these are the jokes right here", data);
     }
 
   useEffect(() => {
@@ -40,10 +38,17 @@ const [data, setData] = useState([]);
 
   return (
     <div className="App">
-      <p className="joke">sorry</p>
+    <main>
+      <h1 className="smile">Your daily dev smile form jokeAPI :) :)</h1>
+    { data.joke ? <Jokes data={data}/> 
+      : data.setup ? <Setup data={data}/>
+      : <p>No jokes available</p>}
+      <button onClick={fetchJokes} className="btn">Click and smile</button>
 
-      { data.joke ? <Jokes data={data}/> : <Setup data={data}/>}
-        <button onClick={fetchJokes} className="btn">Fetch jokes </button>
+      <p>More jokes at <a href="https://sv443.net/jokeapi/v2">jokeAPI</a></p>
+    </main>
+      
+      
     </div>
   );
 }
