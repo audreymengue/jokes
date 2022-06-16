@@ -7,6 +7,7 @@ const Jokes = ({ data }) => {
         <div className="single-joke">
           <h3>{data.joke}</h3>
         </div>
+           
       </article >
      
     )

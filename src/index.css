@@ -65,6 +65,10 @@ a {
 }
 }
 
+.loader {
+  margin-top: 5rem;
+}
+
 .single-joke {
   background-color: #FAC213;
   padding: 2rem;
