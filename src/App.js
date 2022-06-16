@@ -39,16 +39,16 @@ const [data, setData] = useState([]);
   return (
     <div className="App">
     <main>
-      <h1 className="smile">Your daily dev smile form jokeAPI :) :)</h1>
+      <h1 className="smile">Your daily dev smile form jokeAPI <span>:) :)</span></h1>
     { data.joke ? <Jokes data={data}/> 
       : data.setup ? <Setup data={data}/>
       : <p>No jokes available</p>}
       <button onClick={fetchJokes} className="btn">Click and smile</button>
 
-      <p>More jokes at <a href="https://sv443.net/jokeapi/v2">jokeAPI</a></p>
+     
     </main>
       
-      
+      <footer> <p>More jokes at <a href="https://sv443.net/jokeapi/v2">jokeAPI</a></p> </footer>
     </div>
   );
 }
