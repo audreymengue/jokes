@@ -6,6 +6,7 @@
   --width: 40vw;
   --small-width: 20vw;
   --font-size: 0.875rem;
+  --color: #D61C4E;
 }
 
 *,
@@ -33,6 +34,19 @@ code {
 main {
   width: var(--width);
   margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+}
+
+a, span {
+  color: var(--color);
 }
 
 footer {
@@ -42,27 +56,18 @@ footer {
   width: 100%;
   bottom: 0;
 }
-p {
-  text-align: center;
-}
 
-a {
-  color: #D61C4E;
-}
-
-@media screen and (max-width: 600px){
-  h1 {
-    display: none;
+@media screen and (max-width: 700px){
+  
+  main {
+    margin-top: 30px;
+    width: 100%;
   }
 
   footer {
     padding: 2rem;
   }
 
-  .single-joke {
-    text-align: center;
-    width: 60vw;
-}
 }
 
 .loader {
@@ -96,6 +101,7 @@ a {
   padding: 10px 20px 10px 20px;
   border: none;
   text-decoration: none;
+  width: 200px;
 }
 
 .btn:hover {
