@@ -1,11 +1,19 @@
 
 import React from 'react'
+import Loading from "./Loading";
 
-const Jokes = ({ data }) => {
+const Jokes = ({ data, loading }) => {
+
+  if(loading) {
+    return (
+      <section>
+        <Loading/>
+      </section>
+    )
+  }
     return (
       <article className="joke">
         <div className="single-joke">
-        <p>It's just one joke at a time.</p>
           <h3>{data.joke}</h3>
         </div>
            

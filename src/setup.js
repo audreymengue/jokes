@@ -1,6 +1,15 @@
 import React from 'react'
+import Loading from "./Loading";
 
-const Setup = ({data}) => {
+const Setup = ({data, loading}) => {
+
+    if(loading) {
+        return (
+          <section>
+            <Loading/>
+          </section>
+        )
+      }
     return (
       <section className="joke">
          <div className="single-joke">

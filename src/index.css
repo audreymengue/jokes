@@ -71,7 +71,7 @@ footer {
 }
 
 .loader {
-  margin-top: 5rem;
+  margin: 2rem 0;
 }
 
 .single-joke {
@@ -87,8 +87,6 @@ footer {
   line-height: 1.5;
   font-size: var(--font-size);
 }
-
-
 
 .btn {
   -webkit-border-radius: 28;
