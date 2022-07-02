@@ -28,17 +28,14 @@ const [data, setData] = useState([]);
 
   return (
     <div className="App">
-    <main>
-      <h1 className="smile">Your daily dev smile form jokeAPI <span>:) :)</span></h1>
-    { data.joke ? <Jokes loading={loading} data={data}/> 
-      : data.setup ? <Setup loading={loading} data={data}/>
-      : <p>No jokes available</p>}
-      <button onClick={fetchJokes} className="btn">Click and smile</button>
-
-     
-    </main>
-      
-      <footer> <p>More jokes at <a href="https://sv443.net/jokeapi/v2">jokeAPI</a></p> </footer>
+      <main>
+        <h1 className="smile">Your daily dev smile from jokeAPI <span>:) :)</span></h1>
+      { data.joke ? <Jokes loading={loading} data={data}/> 
+        : data.setup ? <Setup loading={loading} data={data}/>
+        : <p>No jokes available</p>}
+      </main>
+        <button onClick={fetchJokes} className="btn">Click and smile</button>
+        <footer> <p>More jokes at <a href="https://sv443.net/jokeapi/v2">jokeAPI</a></p> </footer>
     </div>
   );
 }
