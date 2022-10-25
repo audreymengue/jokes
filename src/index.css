@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
 
 :root {
-  --background-color: #FEF9A7;
+  --background-color: #fef9a7;
   --max-width: 1170px;
   --width: 40vw;
   --small-width: 20vw;
   --font-size: 0.875rem;
-  --color: #D61C4E;
+  --color: #d61c4e;
 }
 
 *,
@@ -18,16 +18,16 @@
 }
 body {
   margin: 0;
-  font-family: 'Happy Monkey', cursive;
+  font-family: "Happy Monkey", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: var(--background-color);
-  color: #3A3845;
+  color: #3a3845;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -45,20 +45,20 @@ p {
   text-align: center;
 }
 
-a, span {
+a,
+span {
   color: var(--color);
 }
 
 footer {
   padding: 4rem;
-  background-color: #FAC213;
+  background-color: #fac213;
   position: fixed;
   width: 100%;
   bottom: 0;
 }
 
-@media screen and (max-width: 700px){
-  
+@media screen and (max-width: 700px) {
   main {
     margin-top: 30px;
     width: 100%;
@@ -68,7 +68,6 @@ footer {
     padding: 1rem;
     /* display: none; */
   }
-
 }
 
 .loader {
@@ -76,9 +75,9 @@ footer {
 }
 
 .single-joke {
-  background-color: #FAC213;
+  background-color: #fac213;
   padding: 2rem;
-  border-radius: 16px ;
+  border-radius: 16px;
   width: 100%;
 }
 
@@ -94,9 +93,9 @@ footer {
   -moz-border-radius: 28;
   border-radius: 28px;
   color: #ffffff;
-  font-family: 'Happy Monkey', cursive;
+  font-family: "Happy Monkey", cursive;
   font-size: 20px;
-  background: #D61C4E;
+  background: #d61c4e;
   padding: 10px 20px 10px 20px;
   border: none;
   text-decoration: none;
@@ -105,11 +104,11 @@ footer {
 
 .btn:hover {
   background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #ef6187, #D61C4E);
-  background-image: -moz-linear-gradient(top, #ef6187, #D61C4E);
-  background-image: -ms-linear-gradient(top, #ef6187, #D61C4E);
-  background-image: -o-linear-gradient(top, #ef6187, #D61C4E);
-  background-image: linear-gradient(to bottom, #ef6187, #D61C4E);
+  background-image: -webkit-linear-gradient(top, #ef6187, #d61c4e);
+  background-image: -moz-linear-gradient(top, #ef6187, #d61c4e);
+  background-image: -ms-linear-gradient(top, #ef6187, #d61c4e);
+  background-image: -o-linear-gradient(top, #ef6187, #d61c4e);
+  background-image: linear-gradient(to bottom, #ef6187, #d61c4e);
   border: none;
   text-decoration: none;
 }
